@@ -1,0 +1,62 @@
+article {
+  margin: 1em;
+  padding: 1em;
+  background-color: #FFC;
+}
+
+table {
+  margin: 1em auto;
+  width: 800px;
+}
+
+table.hasborder {
+  border: darkslateblue solid thin;
+  color: white;
+  background-color: black;
+}
+
+header {
+  text-align: center;
+}
+
+tr {
+  vertical-align: top;
+}
+
+th {
+  text-align: right;
+  width: 10em;
+}
+
+th.hasborder {
+  border: darkslateblue solid thin;
+}
+
+td {
+  text-align: left;
+}
+
+td.twocol {
+  width: 240px;
+}
+
+td.hasborder {
+  border: darkslateblue solid thin;
+}
+
+.center {
+  text-align: center;
+}
+
+textarea, input[type='text'], input[type='password'], input[type='url'], input[type='email'], input[type='tel'] {
+  width: 100%;
+}
+
+input[type='number'] {
+  text-align: center;
+}
+
+input[type='button'], input[type='submit'], input[type='reset'] {
+  width: 8em;
+  padding: 4px;
+}
