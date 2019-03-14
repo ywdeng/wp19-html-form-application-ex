@@ -1,24 +1,139 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <title>第三屆軟體專案管理營</title>
-  <link rel='stylesheet' href='/stylesheets/style.css' />
+    <meta charset="utf-8">
+    <title>第三屆軟體專案管理營</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
 
 <body>
-  <article>
-    <header>
-      <h1>第三屆軟體專案管理營</h1>
-      <h2>線上報名</h2>
-      <hr>
-    </header>
-    <form id="form1" action="/" method="post" enctype="multipart/form-data">
-        
-        <!-- 在此填入表單內容 -->
-        
-    </form>
-  </article>
+    <article>
+        <header>
+            <h1>第三屆軟體專案管理營</h1>
+            <h2>線上報名</h2>
+            <hr>
+        </header>
+        <form id="form1" action="/" method="post" enctype="multipart/form-data">
+            <!-- 以下為表單內容 -->
+            <table>
+                <tr>
+                    <th>姓名：</th>
+                    <td colspan="3">
+                        <input type="text" name="theName" id="theName" required>
+                    </td>
+                </tr>
+                <tr>
+                    <th>電子郵件：</th>
+                    <td colspan="3">
+                        <div>
+                            <input type="email" name="emailAddress" id="emailAddress" required>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>密碼：</th>
+                    <td class="twocol">
+                        <input type="password" name="thePassword" id="thePassword" required>
+                    </td>
+                    <th>確認密碼：</th>
+                    <td class="twocol">
+                        <input type="password" name="confirmPassword" id="confirmPassword" required>
+                    </td>
+                </tr>
+                <tr>
+                    <th>個人網站：</th>
+                    <td colspan="3">
+                        <input type="url" name="homepageUrl" id="homepageUrl">
+                    </td>
+                </tr>
+                <tr>
+                    <th>出生日期：</th>
+                    <td class="twocol">
+                        <input type="date" name="dateBirth" id="dateBirth">
+                    </td>
+                    <th>性別：</th>
+                    <td class="twocol">
+                        <input type="radio" name="gender" value="male" id="gender_male">
+                        <label for="gender_male">男</label>
+                        <input type="radio" name="gender" value="female" id="gender_femail" checked>
+                        <label for="gender_femail">女</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>工作內容：</th>
+                    <td colspan="3">
+                        <input type="checkbox" name="jobFunction_coding" id="jobFunction_coding" value="on">
+                        <label for="jobFunction_coding">撰寫程式</label>
+                        <input type="checkbox" name="jobFunction_art" id="jobFunction_art" value="on">
+                        <label for="jobFunction_art">美工設計</label>
+                        <input type="checkbox" name="jobFunction_webedt" id="jobFunction_webedt" value="on">
+                        <label for="jobFunction_webedt">製作網頁</label>
+                        <input type="checkbox" name="jobFunction_dba" id="jobFunction_dba" value="on">
+                        <label for="jobFunction_dba">資料庫管理</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>聯絡地址：</th>
+                    <td colspan="3">
+                        <textarea name="contactAddress" rows="4" id="contactAddress">
+                        </textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <th>最喜歡的顏色：</th>
+                    <td class="twocol">
+                        <input type="color" name="favoriteColor" required>
+                    </td>
+                    <th>大頭照：</th>
+                    <td class="twocol">
+                        <input type="file" name="avatarPhoto" required>
+                    </td>
+                </tr>
+                <tr>
+                    <th>聯絡電話：</th>
+                    <td class="twocol">
+                        <input name="telNumber" type="tel" id="telNumber">
+                    </td>
+                    <th>每日上網時數：</th>
+                    <td class="twocol">
+                        <input name="webHour" type="number" id="webHour" min="0" max="24" value="1">
+                    </td>
+                </tr>
+                <tr>
+                    <th>最喜歡的入口網站：</th>
+                    <td class="twocol">
+                        <select name="favoritePortal">
+                            <option>Google</option>
+                            <option>Yahoo</option>
+                            <option>Facebook</option>
+                            <option>Pixnet</option>
+                            <option>Twitter</option>
+                        </select>
+                    </td>
+                    <th>學過的程式語言：</th>
+                    <td class="twocol">
+                        <select name="languageStudied" size="3" multiple>
+                            <option>C</option>
+                            <option>JavaScript</option>
+                            <option>C#</option>
+                            <option>Python</option>
+                            <option>Go</option>
+                            <option>JAVA</option>
+                            <option>Ruby</option>
+                            <option>VB</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="center">
+                        <input type="submit">
+                        <input type="reset">
+                    </td>
+                </tr>
+            </table>
+            <!-- 以上為表單內容 -->
+        </form>
+    </article>
 </body>
 
 </html>
